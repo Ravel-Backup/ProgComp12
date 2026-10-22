@@ -7,11 +7,13 @@
 using namespace std;
 
 // Registros:
+	// Atividade de Revisão
 struct complexo {
 	float real;
 	float imaginario;
 };
 
+	// Exercícios de Fixação e Aprendizagem:
 struct Chocolate {
 	char nome[20];
 	float peso;
@@ -37,6 +39,7 @@ struct Evento {
 	Horario horario;
 };
 
+	// Atividade de Aprendizagem:
 struct Conta_bancaria {
 	char titular[80];
 	int identificador;
@@ -58,22 +61,22 @@ struct Jogo {
 };
 
 // Protótipos:
-
+	// Atividade de Revisão
 complexo operator+(const complexo&, const complexo&);
 complexo operator*(const complexo&, const complexo&);
 ostream& operator<<(ostream&, const complexo&);
 istream& operator>>(istream&, complexo&);
+
+	// Exercícios de Fixação
 ostream& operator<<(ostream&, const Chocolate&);
 int operator-(const Data&, const Data&);
 ostream& operator<<(ostream&, const Data&);
 istream& operator>>(istream&, Data&);
 Data dataAtual();
-
-
 void definirChocolates(Chocolate[]);
+
+	// Atividade de Aprendizagem:
 void contaBancaria();
-
-
 ostream& operator<<(ostream&, const Conta_bancaria&);
 istream& operator>>(istream&, Conta_bancaria&);
 
@@ -345,7 +348,8 @@ void duracao() {
 	int horario = receber[0] - receber[1];
 
 	cout << "Entre " << receber[0] << " e " << receber[1] << " existem "
-		<< horario << " minutos, isto é, " << horario / 60 << "h e " << horario % 60 << " minutos.\n";
+		<< horario << " minutos, isto é, " << horario / 60 << "h e " << horario % 60 << " minutos.";
+	cout << "\n\n";
 }
 
 ostream& operator<<(ostream& os, const Evento& receber) {
