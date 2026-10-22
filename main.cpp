@@ -348,8 +348,7 @@ void duracao() {
 	int horario = receber[0] - receber[1];
 
 	cout << "Entre " << receber[0] << " e " << receber[1] << " existem "
-		<< horario << " minutos, isto é, " << horario / 60 << "h e " << horario % 60 << " minutos.";
-	cout << "\n\n";
+		<< horario << " minutos, isto é, " << horario / 60 << "h e " << horario % 60 << " minutos.\n";
 }
 
 ostream& operator<<(ostream& os, const Evento& receber) {
